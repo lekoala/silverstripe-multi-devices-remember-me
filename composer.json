@@ -1,0 +1,27 @@
+{
+    "name": "lekoala/silverstripe-multi-devices-remember-me",
+    "description": "Backports RememberLoginHash from SS4 to SS3 to allow multi devices remember me token",
+    "type": "silverstripe-module",
+    "keywords": [
+        "silverstripe",
+        "module",
+        "remember me"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "LeKoala",
+            "email": "thomas@lekoala.be"
+        }
+    ],
+    "require": {
+        "php": ">=7.2",
+        "silverstripe/framework": "^3.6"
+    },
+    "extra": {
+        "installer-name": "multi-devices-remember-me"
+    },
+    "support": {
+        "issues": "https://github.com/lekoala/silverstripe-multi-devices-remember-me/issues"
+    }
+}

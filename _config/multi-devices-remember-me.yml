@@ -1,0 +1,13 @@
+---
+Name: multi-devices-remember-me
+After:
+  - 'framework/*'
+---
+RememberLoginHash:
+  logout_across_devices: true
+  token_expiry_days: 90
+  device_expiry_days: 365
+  force_single_token: false
+Member:
+  extensions:
+    - 'RememberMeExtension'
