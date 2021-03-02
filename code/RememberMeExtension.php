@@ -40,7 +40,19 @@ class RememberMeExtension extends DataExtension
             Cookie::force_expiry('alc_device');
         }
     }
-
+    
+    /**
+     * Ensure user is properly logged out
+     *
+     * @return void
+     */
+    public function memberLoggedOut()
+    {
+        Cookie::force_expiry('alc_enc_device');
+        Cookie::force_expiry('alc_device');
+        RememberLoginHash::clear($this->owner);
+    }
+    
     /**
      * Log the user in if the "remember login" cookie is set
      *
